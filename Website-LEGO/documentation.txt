@@ -1,0 +1,53 @@
+Thank you for your purchase!
+
+----- Make a news article -----
+Open /scripts/news.js in your favorite text editor (i.e. Notepad)
+Inside, there is an array called news.
+Specifically, it looks like
+var news = [
+with other stuff inside that.
+To add a new article, create an entry formatted like this at the very top:
+
+{
+    title: `Title here`,
+    date: `Date of publication here`,
+    body: `The actual article text goes here
+and can be multiple lines because it's backquotes`,
+},
+
+When you put your article entry at the top of the array, it will be rendered as the first news article by the Javascript code.
+Notice that the quotes are `` instead of "".  These `` are backquotes.  They are the apostrophe-like characters that are located above the Tab key left of the 1 key,
+on the same key as the squiggly line.  Backquotes allow you to have multiple lines in a string value.
+Your edits must always be inside of the backquotes.  Any syntax error can cause the entire news array to fail to load.  (though you will notice this because the website will be devoid of news articles)
+
+If you ever need to insert a link to a different page/website or an image:
+Link: <a href="https://www.linkhere.com">Text you want the link to say</a>
+Image: <img src="assets/images/nameofimagehere.png">
+
+
+----- Add team motto -----
+On the landing page, there is a space where you can put your team's motto/quote.
+To change this, open /index.html with your favorite text editor (i.e. Notepad)
+Find the <div> element that has the text "Your quote/team motto goes here" and change it to your liking
+
+
+----- Add Partners entries -----
+To add a partner, open /partner.html with your favorite text editor (i.e. Notepad)
+Find the comment (denoted by <!--) that says "THIS IS WHERE PARTNER ENTRIES GO"
+You can add partner entries directly beneath that comment
+Each entry must follow this syntax:
+
+<div class="partner-container"><a href="linktopartnerwebsite.com">
+    <div>
+        <img src="assets/images/partnerimage.png" class="partner-img">
+            <p class="partner-info">A paragraph that sums up what the company does.</p>
+    </div>
+</a></div>
+
+NOTE: The company's logo image must have the exact same width and height (i.e. 50x50).
+
+
+----- Edit the team bio -----
+Open /contact.html with your favorite text editor (i.e. Notepad)
+Find the comment (denoted by <!--) that says "THIS IS WHERE THE BIO GOES"
+You can add your team's bio directly beneath that comment.
